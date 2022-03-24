@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD 5 | Transaksi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <b>
+        <a href="./4.html" class="float-start pt-3 m-3">
+            <- Tabel Pembeli</a> </b> <div class="container">
+                <h1 class="text-center pt-4">Tabel Transaksi</h1>
+                <div class="row pt-5">
+                    <!-- Input -->
+
+                    <div class="col-5 ">
+                        <div class="mb-3">
+                            <b><label for="idtrans" class="form-label">ID Transaksi: </label></b>
+                            <input type="number" class="form-control" id="idtrans" placeholder="ID Transaksi"
+                                name="idtrans">
+                        </div>
+                        <div class="mb-3">
+                            <b><label for="idbar" class="form-label">ID Barang: </label></b>
+                            <input type="number" class="form-control" id="idbar" placeholder="ID Barang" name="idbar">
+                        </div>
+                        <div class="mb-3">
+                            <b><label for="idpem" class="form-label">ID Pembeli: </label></b>
+                            <input type="number" class="form-control" id="idpem" placeholder="ID Pembeli" name="idpem">
+                        </div>
+                        <div class="mb-3">
+                            <b><label for="date" class="form-label">Tanggal: </label></b><br>
+                            <input type="date" name="date" id="date" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <b><label for="ket" class="form-label">Keterangan: </label></b>
+                            <input type="text" name="" id="ket" class="form-control" placeholder="Keterangan">
+                        </div>
+                        <input type="button" value="Tambah" class="btn btn-success float-end" onclick="tambah()"
+                            id="btn">
+                    </div>
+                    <div class="col">
+                        <!-- Table -->
+                        <table class="table table-striped" id="table">
+                            <thead>
+                                <tr>
+                                    <th>ID Transaksi</th>
+                                    <th>ID Barang</th>
+                                    <th>ID Pembeli</th>
+                                    <th>Tanggal</th>
+                                    <th>Ket.</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+</body>
+<style>
+    #btn {
+        border-radius: 90px 90px 90px 90px
+    }
+</style>
+<script src="../js/5.js"></script>
+
+</html>
