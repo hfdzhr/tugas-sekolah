@@ -1,5 +1,5 @@
 ## Tampilan Tugas CRUD
-Untuk melihat tampilan project, Kunjungi [tugas-crud.netlify.app](httpsk://tugas-crud.netlify.app).<br>
+Untuk melihat tampilan project, Kunjungi [tugas-crud.netlify.app](https://tugas-crud.netlify.app).<br>
 
 ### Tugas CRUD ini dibuat dengan :
 -  [Bootstrap](https://getbootstrap.com/)
