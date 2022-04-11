@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Object Method</title>
+</head>
+
+<body>
+    <script>
+        let pekerja = {
+            nama: 'Yanto',
+            nip: 12,
+            jabatan: 'Direktur',
+            tampilkan: function () {
+                alert(`Nama: ${this.nama}, nip: ${this.nip}, Jabatan: ${this.jabatan}`)
+            }
+        }
+        pekerja.tampilkan = function nama() {
+            alert('Nama : Yanto')
+        }
+        pekerja.tampilkan()
+    </script>
+</body>
+
+</html>
