@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Gaji OOP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="icon" href="https://miro.medium.com/max/300/0*goJuBKoyL-zZX4RB.png">
+</head>
+
+<body>
+    <h1 align="center" class="pt-4">Sistem Gaji OOP</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="data mt-5">
+                    <label for="nama" class="mt-4">Nama : </label>
+                    <input type="text" name="nama" id="nama" class="form-control " placeholder="Nama Anda">
+                    <label for="golongan" class="mt-3">Golongan : </label>
+                    <select name="" id="golongan" class="form-select mt-">
+                        <option selected>- Golongan -</option>
+                        <option value="1">Golongan 1</option>
+                        <option value="2">Golongan 2</option>
+                        <option value="3">Golongan 3</option>
+                    </select>
+                    <br>
+                    <label for="">Status Keluarga :</label>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="radio" name="StatusKeluarga" id="BlmKel">
+                        <label class="form-check-label" for="BlmKel">
+                            Belum Berkeluarga
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="StatusKeluarga" id="Kel">
+                        <label class="form-check-label" for="Kel">
+                            Berkeluarga
+                        </label>
+                    </div>
+                    <input type="button" value="Cek" class="btn btn-primary float-end" onclick="Hitung()">
+                </div>
+            </div>
+            <div class="col">
+                <div class="tampilan pt-5 m-5">
+                    <p>Nama : <b id="name"></b></p>
+                    <p>Golongan : <b id="gol"></b></p>
+                    <p>Status Keluarga : <b id="sk"></b></p>
+                    <p>Total Gaji : <b id="tg"></b></p>
+                </div>
+            </div>
+        </div>
+        <p align="center" class="mt-5">Created With <i class="bi bi-heart-fill text-danger"></i> by <b>Hafid Al
+                Azhar</b></p>
+    </div>
+</body>
+<style>
+    .tampilan {
+        display: none;
+    }
+</style>
+<script>
+    function Hitung() {
+        nama = document.getElementById('nama').value
+        golongan = document.getElementById('golongan').value
+        skbb = document.getElementById('BlmKel').checked
+        skb = document.getElementById('Kel').checked
+
+        // Hide Function
+        function Hide() {
+            tampilan = document.querySelector('.tampilan')
+            tampilan.style.display = 'block'
+        }
+        Hide()
+        // Golongan 1
+        if (golongan == 1) {
+            document.getElementById('name').innerHTML = nama
+            document.getElementById('gol').innerHTML = ('Golongan 1')
+            if (skbb == true) {
+                document.getElementById('sk').innerHTML = ('Belum Berkeluarga')
+
+                function BelKel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (500000);
+                            pajak = (gajiPokok * 0.1);
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new BelKel();
+                tampil.hitung()
+            } else if (skb == true) {
+                document.getElementById('sk').innerHTML = ('Berkeluarga')
+
+                function Kel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (500000 + 500000)
+                            pajak = (gajiPokok * 0.1)
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new Kel();
+                tampil.hitung()
+            }
+
+            // Golongan 2 
+        } else if (golongan == 2) {
+            document.getElementById('name').innerHTML = nama
+            document.getElementById('gol').innerHTML = ('Golongan 2')
+            if (skbb == true) {
+                document.getElementById('sk').innerHTML = ('Belum Berkeluarga')
+
+                function BelKel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (750000);
+                            pajak = (gajiPokok * 0.1);
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new BelKel();
+                tampil.hitung()
+            } else if (skb == true) {
+                document.getElementById('sk').innerHTML = ('Berkeluarga')
+
+                function Kel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (750000 + 500000)
+                            pajak = (gajiPokok * 0.1)
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new Kel();
+                tampil.hitung()
+            }
+
+            // Golongan 3
+        } else if (golongan == 3) {
+            document.getElementById('name').innerHTML = nama
+            document.getElementById('gol').innerHTML = ('Golongan 3')
+            if (skbb == true) {
+                document.getElementById('sk').innerHTML = ('Belum Berkeluarga')
+
+                function BelKel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (900000);
+                            pajak = (gajiPokok * 0.1);
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new BelKel();
+                tampil.hitung()
+            } else if (skb == true) {
+                document.getElementById('sk').innerHTML = ('Berkeluarga')
+
+                function Kel() {
+                    return {
+                        hitung: function () {
+                            gajiPokok = (900000 + 500000)
+                            pajak = (gajiPokok * 0.1)
+                            total = (gajiPokok - pajak)
+                            document.getElementById('tg').innerHTML = total
+                        }
+                    }
+                }
+                let tampil = new Kel();
+                tampil.hitung()
+            }
+        } else if (golongan == null) {
+            console.log('Silahkan isi ');
+        }
+    }
+</script>
+
+</html>
