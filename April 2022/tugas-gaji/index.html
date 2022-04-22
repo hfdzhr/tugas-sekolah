@@ -40,7 +40,7 @@
                             Berkeluarga
                         </label>
                     </div>
-                    <input type="button" value="Cek" class="btn btn-primary float-end" onclick="Hitung()">
+                    <input type="button" value="Cek" class="btn btn-primary float-end">
                 </div>
             </div>
             <div class="col">
@@ -62,7 +62,7 @@
     }
 </style>
 <script>
-    function Hitung() {
+    document.querySelector('.btn').addEventListener('click', () => {
         nama = document.getElementById('nama').value
         golongan = document.getElementById('golongan').value
         skbb = document.getElementById('BlmKel').checked
@@ -182,7 +182,7 @@
                 tampil.hitung()
             }
         }
-    }
+    })
 </script>
 
 </html>
