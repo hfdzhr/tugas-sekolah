@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs | Pancalan Wirasana Abadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow  bg-body rounded">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold" href="../index.html">PWA</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./jobs.html">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="./login.html" class="nav-link"><i class="bi bi-person"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- A Navbar -->
+
+    <!-- Tittle -->
+    <div class="tittle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#E4E4E4" fill-opacity="1"
+                d="M0,288L80,272C160,256,320,224,480,224C640,224,800,256,960,250.7C1120,245,1280,203,1360,181.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+        <div class="centered fw-bold">
+            <h1 style="border-bottom: 3px solid black;
+            display: inline-block;
+            padding-bottom: 4px;">Jobs</h1>
+        </div>
+    </div>
+    <!-- A Tittle -->
+
+    <!-- Formulir -->
+    <div class="container">
+        <div class="formulir">
+            <div class="row">
+                <div class="col form  shadow p-3 mb-5 bg-body rounded">
+                    <div class="field">
+                        <form action="">
+                            <label for="nama ">Nama :</label>
+                            <input type="text" class="form-control" name="Nama" placeholder="Nama" id="nama">
+                            <br>
+                            <label for="email ">Email :</label>
+                            <input type="email" name="Email" id="email" placeholder="name@example.com"
+                                class="form-control ">
+                            <br>
+                            <!-- Radio Button Jenis Kelamin -->
+                            <div class="radio ">
+                                <label for="jk">Jenis Kelamin : </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="lakilaki"
+                                    required>
+                                <label class="form-check-label" for="lakilaki">
+                                    Laki-Laki
+                                </label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="perempuan">
+                                <label class="form-check-label " for="perempuan">
+                                    Perempuan
+                                </label>
+                            </div>
+                            <br>
+                            <label for="pendidikan">Jenjang Pendidikan Terakhir : </label>
+                            <select name="jp" id="jp" class="form-select">
+                                <option value="SD">SD</option>
+                                <option value="SMP">SMP</option>
+                                <option value="SMA">SMA</option>
+                                <option value="S1">S1</option>
+                                <option value="S2">S2</option>
+                            </select>
+                            <br>
+                            <label for="deskripsi">Deskripsikan dirimu:</label>
+                            <textarea class="form-control" placeholder="Ceritakan tentang dirimu"
+                                id="deskripsi"></textarea>
+                        </form>
+                        <input type="button" value="Cek" class="btn btn-primary float-end mt-3" onclick="kirim()">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="check mx-5 shadow p-3 mb-5 bg-body rounded">
+                        <i class="mb-5"><b>Note:</b> Silahkan cek apakah data anda sudah benar</i>
+                        <p>Nama : <b id="name"></b>
+                        </p>
+                        <p>Email : <b id="mail"></b>
+                        </p>
+                        <p>Jenis Kelamin : <b id="jeka"></b>
+                        </p>
+                        <p>Jenjang Pendidikan : <b id="jepe"></b>
+                        </p>
+                        <p>Deskripsi Dirimu : <b id="dd"></b>
+                        </p>
+                        <input type="button" value="Batal" class="btn btn-danger float-start mt-3" onclick="belum()">
+                        <input type="button" value="Sudah" class="btn btn-success float-end mt-3" onclick="selesai()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,48L60,56C120,64,240,80,360,76C480,72,600,48,720,32C840,16,960,8,1080,14C1200,20,1320,40,1440,48C1560,56,1680,52,1800,44C1920,36,2040,24,2160,34C2280,44,2400,76,2520,88C2640,100,2760,92,2880,88C3000,84,3120,84,3240,88C3360,92,3480,100,3600,102C3720,104,3840,100,3960,92C4080,84,4200,72,4320,56C4440,40,4560,20,4680,26C4800,32,4920,64,5040,76C5160,88,5280,80,5400,70C5520,60,5640,48,5760,52C5880,56,6000,76,6120,78C6240,80,6360,64,6480,52C6600,40,6720,32,6840,32C6960,32,7080,40,7200,52C7320,64,7440,80,7560,72C7680,64,7800,32,7920,26C8040,20,8160,40,8280,44C8400,48,8520,36,8580,30L8640,24L8640,120L8580,120C8520,120,8400,120,8280,120C8160,120,8040,120,7920,120C7800,120,7680,120,7560,120C7440,120,7320,120,7200,120C7080,120,6960,120,6840,120C6720,120,6600,120,6480,120C6360,120,6240,120,6120,120C6000,120,5880,120,5760,120C5640,120,5520,120,5400,120C5280,120,5160,120,5040,120C4920,120,4800,120,4680,120C4560,120,4440,120,4320,120C4200,120,4080,120,3960,120C3840,120,3720,120,3600,120C3480,120,3360,120,3240,120C3120,120,3000,120,2880,120C2760,120,2640,120,2520,120C2400,120,2280,120,2160,120C2040,120,1920,120,1800,120C1680,120,1560,120,1440,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z">
+        </path>
+    </svg>
+    </div>
+
+    <footer class="text-center text-lg-start" style="background-color: #E4E4E4;">
+        <h5 class="text-center">Hubungi Kami: </h5>
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn  btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-solid fa-phone"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: #E4E4E4;">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://hafid.xyz">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- A Footer -->
+</body>
+<script src="../js/sweetalert2.all.min.js"></script>
+<script>
+    function belum() {
+        window.location = './jobs.html'
+    }
+
+    function kirim() {
+        var nama = document.getElementById('nama').value
+        var email = document.getElementById('email').value
+        var lakilaki = document.getElementById('lakilaki').checked
+        var perempuan = document.getElementById('perempuan').checked
+        var jp = document.getElementById('jp').value
+        var deskripsi = document.getElementById('deskripsi').value
+
+        if (nama == "" && email == "" && deskripsi == "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Silahkan isi form dengan benar!',
+            })
+        } else if (nama == "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Silahkan isi form nama!',
+            })
+        } else if (email == "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Silahkan isi form email!',
+            })
+        } else if (deskripsi == "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Silahkan isi form deskripsi',
+            })
+        } else {
+
+            if (lakilaki == true) {
+                document.getElementById('name').innerHTML = nama
+                document.getElementById('mail').innerHTML = email
+                document.getElementById('jeka').innerHTML = ('Laki-Laki')
+                document.getElementById('jepe').innerHTML = jp
+                document.getElementById('dd').innerHTML = deskripsi
+                Hide()
+                local()
+            } else if (perempuan == true) {
+                document.getElementById('name').innerHTML = nama
+                document.getElementById('mail').innerHTML = email
+                document.getElementById('jeka').innerHTML = ('Perempuan')
+                document.getElementById('jepe').innerHTML = jp
+                document.getElementById('dd').innerHTML = deskripsi
+                Hide()
+                local()
+            } else {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Anda tidak punya kelamin ?',
+                })
+            }
+        }
+    }
+
+    function Hide() {
+        tampilan = document.querySelector('.check')
+        tampilan.style.display = 'block'
+    }
+
+    function selesai() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Selamat!',
+            text: 'Data kamu sudah kami terima, silahkan tunggu email dari kami'
+        }).then(
+            function () {
+
+                window.location = '../index.html'
+            }
+        )
+    }
+</script>
+<style>
+    .check {
+        border-radius: 10px;
+        height: 388px;
+        display: none;
+    }
+
+
+
+    p {
+        margin-top: 25px;
+        font-size: large;
+    }
+
+    .form {
+        border-color: black;
+        border-radius: 10px;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    .tittle {
+        text-align: center;
+        color: black;
+    }
+
+    .centered {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .field {
+        margin: 10px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pancalan Wirasana Abadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow  bg-body rounded">
+        <div class="container">
+            <h1 class="navbar-brand fw-bold" href="./index.html">PWA</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./public/jobs.html">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="./public/login.html" class="nav-link"><i class="bi bi-person"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- A Navbar -->
+
+    <!-- Content / Carousel  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="mt-4 mb-3 bg-light rounded-3">
+                    <div class="container py-5">
+                        <h1 class="display-6 fw-bold">Selamat datang, Di PT PWA</h1>
+                        <p class="col-md-8 fs-4">PT PWA Adalah Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Molestiae officia explicabo natus dignissimos nesciunt modi optio aut? Sit, pariatur?
+                            Mollitia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <!-- Carousel -->
+                <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel"
+                    style="margin-top: 80px;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1566226196556-ef949ce5f1a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZhY3Rvcnl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1605673393348-ea896a63541f?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGZhY3Rvcnl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile PT -->
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,15L80,27.5C160,40,320,65,480,70C640,75,800,60,960,62.5C1120,65,1280,85,1440,77.5C1600,70,1760,35,1920,35C2080,35,2240,70,2400,77.5C2560,85,2720,65,2880,55C3040,45,3200,45,3360,45C3520,45,3680,45,3840,45C4000,45,4160,45,4320,55C4480,65,4640,85,4800,95C4960,105,5120,105,5280,92.5C5440,80,5600,55,5760,47.5C5920,40,6080,50,6240,57.5C6400,65,6560,70,6720,72.5C6880,75,7040,75,7200,65C7360,55,7520,35,7680,42.5C7840,50,8000,85,8160,95C8320,105,8480,90,8640,85C8800,80,8960,85,9120,82.5C9280,80,9440,70,9600,57.5C9760,45,9920,30,10080,30C10240,30,10400,45,10560,62.5C10720,80,10880,100,11040,100C11200,100,11360,80,11440,70L11520,60L11520,150L11440,150C11360,150,11200,150,11040,150C10880,150,10720,150,10560,150C10400,150,10240,150,10080,150C9920,150,9760,150,9600,150C9440,150,9280,150,9120,150C8960,150,8800,150,8640,150C8480,150,8320,150,8160,150C8000,150,7840,150,7680,150C7520,150,7360,150,7200,150C7040,150,6880,150,6720,150C6560,150,6400,150,6240,150C6080,150,5920,150,5760,150C5600,150,5440,150,5280,150C5120,150,4960,150,4800,150C4640,150,4480,150,4320,150C4160,150,4000,150,3840,150C3680,150,3520,150,3360,150C3200,150,3040,150,2880,150C2720,150,2560,150,2400,150C2240,150,2080,150,1920,150C1760,150,1600,150,1440,150C1280,150,1120,150,960,150C800,150,640,150,480,150C320,150,160,150,80,150L0,150Z">
+        </path>
+    </svg>
+    <div class="profile pt-5" style="background-color: #E4E4E4 ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./img/download_with_bg-removebg-preview.png" alt="" srcset="" width="100%" class="mt-3"
+                        id="pwa">
+                </div>
+                <div class="col-8">
+                    <div class="mb-3 rounded-3" style="margin-left: 30%; background-color: #E4E4E4;">
+                        <h1 class="display-7 fw-bold">Tentang PT PWA</h1>
+                        <p class="col fs-4">Untuk melihat profile perusahaan kami seperti visi misi perusahaan dll,
+                            silahkan klik link di bawah ini Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corrupti, nisi. </p>
+
+                        <a href="./public/about.html" class="btn btn-primary">Tentang -></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(228, 228, 228, 1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+            d="M0,15L48,27.5C96,40,192,65,288,70C384,75,480,60,576,62.5C672,65,768,85,864,77.5C960,70,1056,35,1152,35C1248,35,1344,70,1440,77.5C1536,85,1632,65,1728,55C1824,45,1920,45,2016,45C2112,45,2208,45,2304,45C2400,45,2496,45,2592,55C2688,65,2784,85,2880,95C2976,105,3072,105,3168,92.5C3264,80,3360,55,3456,47.5C3552,40,3648,50,3744,57.5C3840,65,3936,70,4032,72.5C4128,75,4224,75,4320,65C4416,55,4512,35,4608,42.5C4704,50,4800,85,4896,95C4992,105,5088,90,5184,85C5280,80,5376,85,5472,82.5C5568,80,5664,70,5760,57.5C5856,45,5952,30,6048,30C6144,30,6240,45,6336,62.5C6432,80,6528,100,6624,100C6720,100,6816,80,6864,70L6912,60L6912,150L6864,150C6816,150,6720,150,6624,150C6528,150,6432,150,6336,150C6240,150,6144,150,6048,150C5952,150,5856,150,5760,150C5664,150,5568,150,5472,150C5376,150,5280,150,5184,150C5088,150,4992,150,4896,150C4800,150,4704,150,4608,150C4512,150,4416,150,4320,150C4224,150,4128,150,4032,150C3936,150,3840,150,3744,150C3648,150,3552,150,3456,150C3360,150,3264,150,3168,150C3072,150,2976,150,2880,150C2784,150,2688,150,2592,150C2496,150,2400,150,2304,150C2208,150,2112,150,2016,150C1920,150,1824,150,1728,150C1632,150,1536,150,1440,150C1344,150,1248,150,1152,150C1056,150,960,150,864,150C768,150,672,150,576,150C480,150,384,150,288,150C192,150,96,150,48,150L0,150Z">
+        </path>
+    </svg>
+
+    <!-- Partnership -->
+    <div class="partnership">
+        <div class="container">
+            <h2 class="fw-bold text-center">Perusahan yang telah bekerja sama dengan kami : </h2>
+            <center>
+                <div class="row mt-4">
+                    <div class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Pertamina_Logo.svg"
+                            alt="" width="60%">
+                    </div>
+                    <div class="col"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_PT_Kereta_Api_Indonesia_%28Persero%29_2020.svg/1920px-Logo_PT_Kereta_Api_Indonesia_%28Persero%29_2020.svg.png"
+                            alt="" width="30%"></div>
+                    <div class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Logo_Perum_DAMRI.png"
+                            alt="" width="70%">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col"><img
+                            src="
+                            https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Logo_PLN.svg/1920px-Logo_PLN.svg.png" alt=""
+                            width="30%"></div>
+                    <div class="col">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Logo_INKA_-_Industri_Kereta_Api_Indonesia.svg"
+                            alt="" width="30%">
+                    </div>
+                </div>
+            </center>
+        </div>
+
+        <!-- Footer -->
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(228, 228, 228, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(228, 228, 228, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,15L40,27.5C80,40,160,65,240,70C320,75,400,60,480,62.5C560,65,640,85,720,77.5C800,70,880,35,960,35C1040,35,1120,70,1200,77.5C1280,85,1360,65,1440,55C1520,45,1600,45,1680,45C1760,45,1840,45,1920,45C2000,45,2080,45,2160,55C2240,65,2320,85,2400,95C2480,105,2560,105,2640,92.5C2720,80,2800,55,2880,47.5C2960,40,3040,50,3120,57.5C3200,65,3280,70,3360,72.5C3440,75,3520,75,3600,65C3680,55,3760,35,3840,42.5C3920,50,4000,85,4080,95C4160,105,4240,90,4320,85C4400,80,4480,85,4560,82.5C4640,80,4720,70,4800,57.5C4880,45,4960,30,5040,30C5120,30,5200,45,5280,62.5C5360,80,5440,100,5520,100C5600,100,5680,80,5720,70L5760,60L5760,150L5720,150C5680,150,5600,150,5520,150C5440,150,5360,150,5280,150C5200,150,5120,150,5040,150C4960,150,4880,150,4800,150C4720,150,4640,150,4560,150C4480,150,4400,150,4320,150C4240,150,4160,150,4080,150C4000,150,3920,150,3840,150C3760,150,3680,150,3600,150C3520,150,3440,150,3360,150C3280,150,3200,150,3120,150C3040,150,2960,150,2880,150C2800,150,2720,150,2640,150C2560,150,2480,150,2400,150C2320,150,2240,150,2160,150C2080,150,2000,150,1920,150C1840,150,1760,150,1680,150C1600,150,1520,150,1440,150C1360,150,1280,150,1200,150C1120,150,1040,150,960,150C880,150,800,150,720,150C640,150,560,150,480,150C400,150,320,150,240,150C160,150,80,150,40,150L0,150Z">
+            </path>
+        </svg>
+    </div>
+    <footer class="text-center text-lg-start" style="background-color: #E4E4E4;">
+        <h5 class="text-center">Hubungi Kami: </h5>
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn  btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-solid fa-phone"></i>
+            </button>
+            <button type="button" class="btn btn-lg btn-floating mx-2" style="background-color: #E4E4E4;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </button>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: #E4E4E4;">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://hafid.xyz">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
+<style>
+    li {
+        margin-right: 10px;
+    }
+
+    #pwa {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    #pwa:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+</style>
+
+</html>
